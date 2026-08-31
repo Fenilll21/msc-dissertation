@@ -1,0 +1,5 @@
+cohort,model,AUROC,AUPRC,n_features,AUROC_cost
+ICU,FULL (39 features),0.7792,0.384,76,0.0
+ICU,minus 20 discharge-assigned features,0.7731,0.3795,56,0.0061
+SW,FULL (39 features),0.8781,0.4793,76,0.0
+SW,minus 20 discharge-assigned features,0.8746,0.4793,56,0.0035

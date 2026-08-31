@@ -1,0 +1,3 @@
+Model,Cohort,Condition,Accuracy,AUROC,AUPRC,Precision,Recall,F1,Epochs,Train_Time_s,split_id
+BiLSTM,SW,Sequence Only,0.3632,0.5633,0.1058,0.1022,0.7611,0.1801,24,24.9,0f50fb19f263c430
+BiLSTM,SW,Sequence + Tabular,0.7849,0.8318,0.3142,0.2624,0.7401,0.3875,25,27.4,0f50fb19f263c430

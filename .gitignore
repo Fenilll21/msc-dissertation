@@ -1,0 +1,13 @@
+﻿__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+*_tagged*.csv
+error_analysis_rows_*.csv
+splits/
+aire_upload*/

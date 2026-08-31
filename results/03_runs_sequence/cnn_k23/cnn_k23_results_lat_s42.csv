@@ -1,0 +1,5 @@
+Model,Cohort,Condition,Accuracy,AUROC,AUPRC,Precision,Recall,F1,Epochs,Train_Time_s,split_id
+CNN-k23,ICU,Sequence Only,0.6085,0.529,0.1254,0.1252,0.3835,0.1888,13,8.1,6e09b6e8a1606e84
+CNN-k23,ICU,Sequence + Tabular,0.7577,0.7867,0.38,0.281,0.6668,0.3954,21,15.5,6e09b6e8a1606e84
+CNN-k23,SW,Sequence Only,0.9082,0.6941,0.3584,0.5176,0.3723,0.4331,22,10.8,0f50fb19f263c430
+CNN-k23,SW,Sequence + Tabular,0.8378,0.8933,0.601,0.3402,0.7692,0.4718,23,13.4,0f50fb19f263c430

@@ -1,0 +1,15 @@
+cohort,removed_group,AUROC,AUPRC,n_features,AUROC_drop
+ICU,(none) FULL,0.7926,0.5149,76,0.0
+ICU,demographics,0.7925,0.5153,49,0.0001
+ICU,clinical_core,0.7177,0.3629,64,0.0749
+ICU,icd_chapters,0.7871,0.5099,58,0.0055
+ICU,charlson,0.7926,0.515,75,0.0
+ICU,chronic_count,0.7917,0.5138,75,0.0009
+ICU,process,0.7504,0.4162,59,0.0422
+SW,(none) FULL,0.8577,0.5209,76,0.0
+SW,demographics,0.8576,0.5194,49,0.0001
+SW,clinical_core,0.8009,0.3831,64,0.0568
+SW,icd_chapters,0.8556,0.5286,58,0.0021
+SW,charlson,0.8577,0.5207,75,0.0
+SW,chronic_count,0.8563,0.5215,75,0.0014
+SW,process,0.7064,0.293,59,0.1513

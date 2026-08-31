@@ -1,0 +1,13 @@
+cohort,group_alone,AUROC,AUPRC,n_features
+ICU,demographics,0.5271,0.153,27
+ICU,clinical_core,0.7398,0.374,12
+ICU,icd_chapters,0.713,0.3249,18
+ICU,charlson,0.5795,0.1716,1
+ICU,chronic_count,0.6171,0.1995,1
+ICU,process,0.5544,0.17,17
+SW,demographics,0.6124,0.5645,27
+SW,clinical_core,0.7381,0.6966,12
+SW,icd_chapters,0.6864,0.6468,18
+SW,charlson,0.5921,0.5202,1
+SW,chronic_count,0.5606,0.4964,1
+SW,process,0.6836,0.6399,17

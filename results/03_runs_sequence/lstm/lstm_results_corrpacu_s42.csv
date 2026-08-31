@@ -1,0 +1,3 @@
+Model,Cohort,Condition,Accuracy,AUROC,AUPRC,Precision,Recall,F1,Epochs,Train_Time_s,split_id
+LSTM,SW,Sequence Only,0.3986,0.5607,0.1049,0.1054,0.7401,0.1845,35,32.7,0f50fb19f263c430
+LSTM,SW,Sequence + Tabular,0.7738,0.8261,0.3029,0.2521,0.7433,0.3765,27,27.1,0f50fb19f263c430

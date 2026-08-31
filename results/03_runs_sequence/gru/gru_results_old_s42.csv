@@ -1,0 +1,5 @@
+Model,Cohort,Condition,Accuracy,AUROC,AUPRC,Precision,Recall,F1,Epochs,Train_Time_s,split_id
+GRU,ICU,Sequence Only,0.3068,0.5373,0.165,0.1604,0.8435,0.2695,40,46.6,6e09b6e8a1606e84
+GRU,ICU,Sequence + Tabular,0.7653,0.8098,0.5252,0.3581,0.6914,0.4718,21,26.6,6e09b6e8a1606e84
+GRU,SW,Sequence Only,0.8707,0.6483,0.3339,0.5729,0.2697,0.3668,21,19.5,0f50fb19f263c430
+GRU,SW,Sequence + Tabular,0.8289,0.8808,0.616,0.4342,0.7678,0.5547,22,22.1,0f50fb19f263c430

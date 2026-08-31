@@ -1,0 +1,7 @@
+cohort,added_group,cumulative_AUROC,cumulative_AUPRC,AUROC_gain,n_features
+SW,demographics,0.5324,0.0879,,27
+SW,clinical_core,0.5825,0.105,0.0501,39
+SW,chronic_count,0.5837,0.1058,0.0012,40
+SW,charlson,0.5835,0.1058,-0.0002,41
+SW,icd_chapters,0.5961,0.1105,0.0126,59
+SW,process,0.8058,0.2261,0.2097,76

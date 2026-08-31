@@ -1,0 +1,3 @@
+cohort,model,AUROC,AUPRC,n_features,AUROC_cost
+SW,FULL (39 features),0.8002,0.2659,76,0.0
+SW,minus 20 discharge-assigned features,0.7919,0.2464,56,0.0083

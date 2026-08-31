@@ -1,0 +1,47 @@
+careunit,n_rows,n_admissions,median_hours,pct_under_4h,level,tier,criterion,contestable,note
+Medical Intensive Care Unit (MICU),26380,22054,38.07,12.1,4,Critical care,"~1:1 nursing, invasive monitoring, multi-organ support",N,
+Cardiac Vascular Intensive Care Unit (CVICU),20920,15808,33.18,10.35,4,Critical care,"~1:1 nursing, invasive monitoring, multi-organ support",N,
+Medical/Surgical Intensive Care Unit (MICU/SICU),20427,16280,30.84,19.03,4,Critical care,"~1:1 nursing, invasive monitoring, multi-organ support",N,
+Surgical Intensive Care Unit (SICU),17311,14481,41.29,10.49,4,Critical care,"~1:1 nursing, invasive monitoring, multi-organ support",N,
+Trauma SICU (TSICU),14972,11741,34.71,14.12,4,Critical care,"~1:1 nursing, invasive monitoring, multi-organ support",N,
+Coronary Care Unit (CCU),13923,12116,40.26,11.48,4,Critical care,"~1:1 nursing, continuous invasive monitoring",Y,CCU vs general ICU: same tier by capability ceiling. Do NOT rank below MICU.
+Neuro Surgical Intensive Care Unit (Neuro SICU),4027,3480,48.18,9.09,4,Critical care,"~1:1 nursing, invasive monitoring, multi-organ support",N,
+Intensive Care Unit (ICU),117,67,34.84,27.35,4,Critical care,Generic ICU label,N,Only 117 rows / 67 admissions - negligible.
+Hematology/Oncology Intermediate,24376,13787,54.45,17.78,3,Intermediate/HDU,"~1:2-1:4 nursing, continuous monitoring, single-organ support",N,
+Medicine/Cardiology Intermediate,15535,10850,46.39,18.38,3,Intermediate/HDU,"~1:2-1:4 nursing, continuous monitoring, single-organ support",N,
+Cardiology Surgery Intermediate,10415,7320,62.67,12.58,3,Intermediate/HDU,"~1:2-1:4 nursing, continuous monitoring, single-organ support",N,
+Neuro Intermediate,8834,5762,41.53,13.44,3,Intermediate/HDU,"~1:2-1:4 nursing, continuous monitoring",N,
+Surgery/Vascular/Intermediate,7515,5599,54.52,13.19,3,Intermediate/HDU,"~1:2-1:4 nursing, continuous monitoring",N,
+Neuro Stepdown,2016,1432,30.32,14.68,3,Intermediate/HDU,Explicit step-down designation,N,
+Surgical Intermediate,1791,1473,49.9,14.07,3,Intermediate/HDU,"~1:2-1:4 nursing, continuous monitoring",N,
+Medicine,191862,134836,43.53,19.27,2,General ward,"Ward ratios, intermittent observation",N,
+Med/Surg,56907,41033,42.96,19.23,2,General ward,Ward ratios; joint med/surg bed,N,
+Medicine/Cardiology,53897,40221,36.88,15.97,2,General ward,"Ward ratios, intermittent observation",N,
+Neurology,49749,34290,42.08,14.88,2,General ward,"Ward ratios, intermittent observation",N,
+Transplant,37907,24835,47.98,16.6,2,General ward,"Surgical specialty, ward-level capability",Y,Specialty != intensity.
+Hematology/Oncology,37354,23697,55.18,14.37,2,General ward,"Ward ratios, intermittent observation",N,
+Vascular,32546,21812,38.95,15.53,2,General ward,"Surgical specialty, ward-level capability",Y,Specialty != intensity.
+Med/Surg/GYN,27958,21101,40.39,15.47,2,General ward,Ward ratios; joint med/surg bed,N,
+Surgery/Trauma,26379,19596,47.03,16.05,2,General ward,"Surgical specialty, ward-level capability",Y,Specialty != intensity.
+Med/Surg/Trauma,24544,18678,47.27,14.08,2,General ward,Ward ratios; joint med/surg bed,N,
+Surgery,21417,15947,38.57,18.38,2,General ward,"Surgical SPECIALTY, ward-level capability",Y,Specialty != intensity. Same tier as Medicine.
+Cardiac Surgery,18003,11611,46.6,11.35,2,General ward,"Surgical specialty, ward-level capability",Y,"Post-op cardiac patients recover in CVICU/Intermediate, not here."
+Medical/Surgical (Gynecology),10214,7695,33.31,16.97,2,General ward,Ward ratios; joint med/surg bed,N,
+Surgery/Pancreatic/Biliary/Bariatric,9031,6416,40.54,16.73,2,General ward,"Surgical specialty, ward-level capability",Y,Specialty != intensity.
+Cardiology,4392,3844,20.45,15.92,2,General ward,Ward-level; possible telemetry unit,Y,Median 20h / p75 25h = short-stay profile. Could justify own tier if telemetry-capable. ASK OWEN.
+Thoracic Surgery,3284,2257,27.12,21.35,2,General ward,"Surgical specialty, ward-level capability",Y,Specialty != intensity.
+Oncology,789,673,85.1,17.62,2,General ward,"Ward ratios, intermittent observation",N,
+Emergency Department,784400,374262,5.34,31.82,1,Entry,Undifferentiated entry point,N,
+Emergency Department Observation,101347,99850,0.45,80.43,1,Entry,Short-stay observation,N,80.4% of rows < 4h - largely transit. Dwell filter will remove most.
+Observation,4624,4018,19.6,17.58,1,Entry,Short-stay observation,N,
+UNKNOWN,546196,546024,31.21,0.01,0,Discharge,eventtype=discharge terminal row,N,"546,024 of 546,196 rows are the discharge row. The other 172 are genuinely missing - drop those."
+Discharge Lounge,71241,67063,12.52,26.94,0,Discharge,"Pre-discharge holding, not a care location",N,
+PACU,34958,31384,2.69,61.24,off-ladder,Procedural excursion,"Post-anaesthesia recovery = an EVENT, not a level of care",N,"Median 2.69h, 61% <4h, 87% entered by transfer. Carry as procedural flag; anchors the planned-surgery rule."
+Labor & Delivery,29003,22011,8.24,20.91,off-ladder,Obstetric pathway,Different care trajectory; descent is planned by design,N,EXCLUDE cohort.
+Obstetrics (Postpartum & Antepartum),16919,14758,52.29,3.49,off-ladder,Obstetric pathway,Different care trajectory,N,EXCLUDE cohort.
+Psychiatry,16873,9552,96.63,14.79,off-ladder,Psychiatric,Acuity axis is orthogonal to medical organ-support acuity,Y,"Longest median stay (96.6h). ASK OWEN: exclude, or pin at level 2?"
+Obstetrics Postpartum,8086,7476,50.68,3.78,off-ladder,Obstetric pathway,Different care trajectory,N,EXCLUDE cohort.
+Obstetrics Antepartum,3009,2298,43.66,6.11,off-ladder,Obstetric pathway,Different care trajectory,N,EXCLUDE cohort.
+Nursery,1972,1700,6.37,37.98,off-ladder,Neonatal,Neonates removed from MIMIC-IV v2.0+; residual rows,N,EXCLUDE cohort.
+Unknown,158,136,18.93,27.22,off-ladder,Missing,Location not recorded,N,158 rows - drop.
+Special Care Nursery (SCN),3,1,98.79,33.33,off-ladder,Neonatal,3 rows / 1 admission,N,EXCLUDE cohort.
