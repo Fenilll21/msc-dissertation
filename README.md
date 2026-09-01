@@ -1,4 +1,4 @@
-﻿# Predicting Pathway Left Shifts with Outcome-Oriented Predictive Process Monitoring
+# Advanced techniques for predicting left shifts in patient flow using predictive process monitoring
 
 MSc Advanced Computer Science (Data Analytics), University of Leeds — COMP5200M.
 
